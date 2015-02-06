@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+    <h1>All Lists</h1>
+
+    <table class="table table-hover">
+      <thead><tr><th>Name</th></tr>
+      <!-- <tfoot><tr><td colspan=2><button type="button"><a href="/lists/new">Add New</a></button>
+        </td></tr></tfoot> -->
+      <tbody>
+      <% @lists.each do |list| %>
+      <tr><td><a href="lists/<%= list.id %>/edit"><%= list.name %></a></td><tr>
+      <% end %>
+    </tbody>
+    </table>
+
+    <h3>New List</h3>
+    <% if @list.errors.any? %>
+    <h3>Please fix these errors:</h3>
+    <ul>
+      <% @list.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
+    <form action="/lists" method="post">
+      <label for="list_name">Name</label>
+      <input id="list_name" name="name" type="text">
+      <button>Create List</button>
+
+  </div>
+</div>
