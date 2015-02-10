@@ -3,13 +3,20 @@
 
     <h1>All Lists</h1>
 
+    <form id="idx-form" action="/lists" method="post">
+      <input id="_method" name="_method" type="hidden" value="post">
+
     <table class="table table-hover">
       <thead><tr><th>Name</th></tr>
       <!-- <tfoot><tr><td colspan=2><button type="button"><a href="/lists/new">Add New</a></button>
         </td></tr></tfoot> -->
       <tbody>
       <% @lists.each do |list| %>
-      <tr><td><a href="lists/<%= list.id %>/edit"><%= list.name %></a></td><tr>
+      <tr><td><a href="/lists/<%= list.id %>/edit"><%= list.name %></a></td>
+        <td align="right">
+          <button type="button" id="btn-delete-list-<%= list.id %>" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span></button>
+          </td><tr>
       <% end %>
     </tbody>
     </table>
@@ -24,10 +31,9 @@
     </ul>
     <% end %>
 
-    <form action="/lists" method="post">
       <label for="list_name">Name</label>
       <input id="list_name" name="name" type="text">
-      <button>Create List</button>
-
+      <button type="button" id="btn-create-list">Create List</button>
+    </form>
   </div>
 </div>

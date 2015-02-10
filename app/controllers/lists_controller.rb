@@ -10,14 +10,21 @@ class ListsController < ActionController::Base
   def create
     @list = List.create
     @list.name = params[:name]
-    if @list.save
-      @lists = List.all
-    end
+    @list.save
+    @lists = List.all
+    render('lists/index.html.erb')
+  end
+
+  def destroy
+    List.destroy(params[:id].to_i)
+    @lists = List.all
     render('lists/index.html.erb')
   end
 
   def edit
-
+    @list = List.find_by(id: params[:id].to_i )
+    @tasks = Task.get_tasks_by_list_id( params[:id].to_i )
+    render('tasks/index.html.erb')
   end
 
 
