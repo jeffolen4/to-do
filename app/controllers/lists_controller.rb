@@ -3,8 +3,8 @@ class ListsController < ActionController::Base
 
   def index
     @lists = List.all
-    @list = List.first == nil ? List.create : List.first
-    # render('contacts/index.html.erb')ß
+    @list = List.first == nil ? nil : List.first
+    # render('contacts/index.html.erb')
   end
 
   def create

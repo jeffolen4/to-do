@@ -16,4 +16,22 @@ ActiveRecord::Schema.define(version: 0) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "lists", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string   "description"
+    t.boolean  "done",        default: false
+    t.integer  "list_id"
+    t.date     "due_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "tasks", ["list_id"], name: "fki_lists_fk_id", using: :btree
+
+  add_foreign_key "tasks", "lists", name: "lists_fk_id", on_delete: :cascade
 end

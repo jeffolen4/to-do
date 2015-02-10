@@ -3,7 +3,7 @@ class TasksController < ActionController::Base
 
   def index
     @tasks = Task.all
-    @task = Task.order("id").first == nil ? Task.create : Task.order("id").first
+    @task = Task.order("id").first == nil ? nil : Task.order("id").first
     # render('contacts/index.html.erb')
   end
 

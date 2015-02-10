@@ -15,8 +15,8 @@
     </table>
 
     <h3>New List</h3>
-    <% if @list.errors.any? %>
-    <h3>Please fix these errors:</h3>
+    <% if @list != nil && @list.errors.any? %>
+    <h4>Please fix these errors:</h4>
     <ul>
       <% @list.errors.full_messages.each do |message| %>
       <li><%= message %></li>
