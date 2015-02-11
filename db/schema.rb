@@ -17,21 +17,16 @@ ActiveRecord::Schema.define(version: 0) do
   enable_extension "plpgsql"
 
   create_table "lists", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "name"
+    t.boolean "deleted", default: false
   end
 
   create_table "tasks", force: :cascade do |t|
-    t.string   "description"
-    t.boolean  "done",        default: false
-    t.integer  "list_id"
-    t.date     "due_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "description"
+    t.boolean "done",        default: false
+    t.integer "list_id",                     null: false
+    t.date    "due_date"
   end
 
-  add_index "tasks", ["list_id"], name: "fki_lists_fk_id", using: :btree
-
-  add_foreign_key "tasks", "lists", name: "lists_fk_id", on_delete: :cascade
+  add_foreign_key "tasks", "lists", name: "lists_fk", on_delete: :cascade
 end
