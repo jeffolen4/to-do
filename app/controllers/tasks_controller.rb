@@ -25,9 +25,9 @@ class TasksController < ActionController::Base
   end
 
   def update
-    logger.debug "attempting to update a task with id: #{params[:id]}. params is: #{params}"
+    # logger.debug "attempting to update a task with id: #{params[:id]}. params is: #{params}"
     @task = Task.find_by(id: params[:id].to_i)
-    @task.done = params[:task][:done] == "1" ? true : false
+    @task.done = !@task.done
     @task.save
     @tasks = Task.get_tasks_by_list_id( @task.list_id )
     @list = List.find_by(id: @task.list_id )
