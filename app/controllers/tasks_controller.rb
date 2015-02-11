@@ -20,10 +20,20 @@ class TasksController < ActionController::Base
     @tasks = Task.get_tasks_by_list_id( @task.list_id )
     @list = List.find_by(id: @task.list_id )
     @list_id = @task.list_id
-    logger.debug "retrieving list with list id: #{@list_id}. List is: #{@list}"
+    # logger.debug "retrieving list with list id: #{@list_id}. List is: #{@list}"
     render('tasks/index.html.erb')
   end
 
+  def update
+    logger.debug "attempting to update a task with id: #{params[:id]}. params is: #{params}"
+    @task = Task.find_by(id: params[:id].to_i)
+    @task.done = params[:task][:done] == "1" ? true : false
+    @task.save
+    @tasks = Task.get_tasks_by_list_id( @task.list_id )
+    @list = List.find_by(id: @task.list_id )
+    @list_id = @task.list_id
+    render('tasks/index.html.erb')
+  end
 
   def destroy
     logger.debug "attempting to delete a task with id: #{params[:id]}. params is: #{params}"

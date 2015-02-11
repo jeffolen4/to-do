@@ -14,8 +14,8 @@
       <tbody>
       <% @tasks.each do |task| %>
       <tr><td class="col-sm-7"><a href="tasks/<%= task.id %>/edit"><%= task.description %></a></td>
-        <td class="col-sm-1"><input type="checkbox" name="done" id="done<%= task.id %>" value="<%= task.id %>"
-            <% if task.done == true %> class='box-checked' checked <% end %> /></td>
+        <td class="col-sm-1"><input type="checkbox" name="task[done]" id="done<%= task.id %>" value="<%= task.done ? "1" : "0" %>"
+            <% if task.done == true %> class='box-checked' checked <% end %> ></td>
         <td><%= task.due_date == nil ? " " : task.due_date.strftime("%a %m-%d-%Y") %></td>
         <td class="col-sm-1" align="right">
           <button type="button" id="btn-delete-task-<%= task.id %>" class="btn btn-default" aria-label="Left Align">

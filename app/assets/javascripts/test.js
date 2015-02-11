@@ -1,11 +1,34 @@
 $(document).ready( function () {
-
+//
   var doneBoxes = $("input[id^='done']")
-
-
-  doneBoxes.click( function (event) {
-    var junk = 0
-  })
+//
+//   doneBoxes.each( function (idx, val) {
+//     currentRow = val.parentElement.parentElement
+//     val.value = "0"
+//     if ( val.checked ) {
+//       $(currentRow).addClass("delete-text")
+//       val.value = "1"
+//     }
+//   });
+//
+  // doneBoxes.click( function (event) {
+  //   // event.preventDefault();
+  //   // event.stopPropagation();
+  //   var id = event.currentTarget.id.slice(4)
+  //   var doneValue = event.currentTarget.value
+  //   box = event.currentTarget
+  //   currentRow = box.parentElement.parentElement
+  //   if ( box.checked ) {
+  //     box.value = "1"
+  //     $(currentRow).addClass("delete-text")
+  //   } else {
+  //     box.value = "0"
+  //     $(currentRow).removeClass("delete-text")
+  //   }
+  //   $("#_method").val("patch");
+  //   $("#add-task-form").attr("action","/tasks/" + id );
+  //   // $("#add-task-form").submit()
+  // })
 
   $("button").click( function (event) {
     event.preventDefault();
