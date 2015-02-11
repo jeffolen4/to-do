@@ -26,6 +26,8 @@ default: &default
 development:
   <<: *default
   database: d6b4g8d20srfna
+  username: opzzadfhxmaboq
+  password: bH8Zv1m1SMAuS2Fr-edvNhRewB
 
 
   # The specified database role being used to connect to postgres.
@@ -61,6 +63,8 @@ development:
 test:
   <<: *default
   database: d6b4g8d20srfna
+  username: opzzadfhxmaboq
+  password: bH8Zv1m1SMAuS2Fr-edvNhRewB
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -84,3 +88,5 @@ test:
 production:
   <<: *default
   database: d6b4g8d20srfna
+  username: opzzadfhxmaboq
+  password: bH8Zv1m1SMAuS2Fr-edvNhRewB
