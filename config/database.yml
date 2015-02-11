@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  url: postgres://opzzadfhxmabo:bH8Zv1m1SMAuS2Fr-edvNhRewB@ec2-54-83-43-49.compute-1.amazonaws.com/d6b4g8d20srfn
+  url: <%= ENV['HEROKU_POSTGRESQL_COBALT_URL'] %>
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
