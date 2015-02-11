@@ -16933,3 +16933,1103 @@ Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" fo
 
 
 Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-10 17:58:19 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 09:34:53 -0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (48.0ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 743ms (Views: 369.1ms | ActiveRecord: 272.3ms)
+
+
+Started GET "/lists" for ::1 at 2015-02-11 09:34:55 -0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:34:55 -0800
+
+
+Started POST "/lists" for ::1 at 2015-02-11 09:35:01 -0800
+Processing by ListsController#create as HTML
+  Parameters: {"name"=>"Kids"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.3ms)[0m  INSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kids"], ["created_at", "2015-02-11 17:35:01.120131"], ["updated_at", "2015-02-11 17:35:01.120131"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 135ms (Views: 43.7ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:01 -0800
+
+
+Started DELETE "/lists/303" for ::1 at 2015-02-11 09:35:03 -0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"name"=>"", "id"=>"303"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 303]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (65.5ms)[0m  [1mDELETE FROM "lists" WHERE "lists"."id" = $1[0m  [["id", 303]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 133ms (Views: 57.7ms | ActiveRecord: 66.4ms)
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:04 -0800
+
+
+Started POST "/lists" for ::1 at 2015-02-11 09:35:07 -0800
+Processing by ListsController#create as HTML
+  Parameters: {"name"=>"Kids"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Kids"], ["created_at", "2015-02-11 17:35:07.305624"], ["updated_at", "2015-02-11 17:35:07.305624"]]
+  [1m[35m (15.6ms)[0m  COMMIT
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 59.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:07 -0800
+
+
+Started GET "/lists/292/edit" for ::1 at 2015-02-11 09:35:09 -0800
+Processing by ListsController#edit as HTML
+  Parameters: {"name"=>"", "id"=>"292"}
+  [1m[35mList Load (0.6ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 292]]
+  [1m[36mTask Load (44.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (70.8ms)
+Completed 200 OK in 128ms (Views: 75.2ms | ActiveRecord: 46.1ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:09 -0800
+
+
+Started PATCH "/tasks/111" for ::1 at 2015-02-11 09:35:19 -0800
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"list_id"=>"292", "description"=>"", "due_date"=>""}, "id"=>"111"}
+  [1m[35mTask Load (45.1ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 111]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tasks" SET "done" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3  [["done", "f"], ["updated_at", "2015-02-11 17:35:19.164897"], ["id", 111]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 292]]
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 114ms (Views: 61.4ms | ActiveRecord: 46.2ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:19 -0800
+
+
+Started PATCH "/tasks/111" for ::1 at 2015-02-11 09:35:21 -0800
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"list_id"=>"292", "description"=>"", "due_date"=>""}, "id"=>"111"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 111]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  UPDATE "tasks" SET "done" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3  [["done", "t"], ["updated_at", "2015-02-11 17:35:21.923868"], ["id", 111]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.7ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 292]]
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 60ms (Views: 47.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:21 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:22 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 09:35:35 -0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:35:35 -0800
+
+
+Started GET "/lists/292/edit" for ::1 at 2015-02-11 09:44:55 -0800
+Processing by ListsController#edit as HTML
+  Parameters: {"name"=>"", "id"=>"292"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 292]]
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 09:44:56 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 10:09:35 -0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.6ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 125ms (Views: 90.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 10:09:35 -0800
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mList Load (1.3ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 58ms (Views: 54.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:09:35 -0800
+
+
+Started GET "/lists/292/edit" for ::1 at 2015-02-11 10:09:54 -0800
+Processing by ListsController#edit as HTML
+  Parameters: {"name"=>"", "id"=>"292"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 292]]
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 60ms (Views: 49.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:09:54 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 10:10:01 -0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:01 -0800
+
+
+Started DELETE "/lists/304" for ::1 at 2015-02-11 10:10:06 -0800
+Processing by ListsController#destroy as HTML
+  Parameters: {"name"=>"", "id"=>"304"}
+  [1m[35mList Load (0.5ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 304]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "lists" WHERE "lists"."id" = $1  [["id", 304]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 79ms (Views: 72.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:06 -0800
+
+
+Started POST "/lists" for ::1 at 2015-02-11 10:10:11 -0800
+Processing by ListsController#create as HTML
+  Parameters: {"name"=>"Kids"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "lists" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Kids"], ["created_at", "2015-02-11 18:10:11.885047"], ["updated_at", "2015-02-11 18:10:11.885047"]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 87ms (Views: 63.6ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:11 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:11 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:11 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:11 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:12 -0800
+
+
+Started GET "/lists/293/edit" for ::1 at 2015-02-11 10:10:14 -0800
+Processing by ListsController#edit as HTML
+  Parameters: {"name"=>"", "id"=>"293"}
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 293]]
+  [1m[35mTask Load (1.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 56ms (Views: 53.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:15 -0800
+
+
+Started POST "/tasks/" for ::1 at 2015-02-11 10:10:46 -0800
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>{"list_id"=>"293", "description"=>"Read up on Rails ", "due_date"=>"2015-02-20"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (37.3ms)[0m  INSERT INTO "tasks" ("list_id", "description", "due_date", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["list_id", 293], ["description", "Read up on Rails "], ["due_date", "2015-02-20"], ["created_at", "2015-02-11 18:10:46.103999"], ["updated_at", "2015-02-11 18:10:46.103999"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 293]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 98ms (Views: 54.4ms | ActiveRecord: 38.3ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:46 -0800
+
+
+Started PATCH "/tasks/123" for ::1 at 2015-02-11 10:10:50 -0800
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"list_id"=>"293", "description"=>"", "due_date"=>""}, "id"=>"123"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 123]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tasks" SET "done" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3  [["done", "t"], ["updated_at", "2015-02-11 18:10:50.919574"], ["id", 123]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.3ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 293]]
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:50 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:50 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:51 -0800
+
+
+Started PATCH "/tasks/123" for ::1 at 2015-02-11 10:10:54 -0800
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"list_id"=>"293", "description"=>"", "due_date"=>""}, "id"=>"123"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 123]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tasks" SET "done" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3  [["done", "f"], ["updated_at", "2015-02-11 18:10:54.273067"], ["id", 123]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 293]]
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:54 -0800
+
+
+Started PATCH "/tasks/123" for ::1 at 2015-02-11 10:10:56 -0800
+Processing by TasksController#update as HTML
+  Parameters: {"task"=>{"list_id"=>"293", "description"=>"", "due_date"=>""}, "id"=>"123"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 123]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "tasks" SET "done" = $1, "updated_at" = $2 WHERE "tasks"."id" = $3  [["done", "t"], ["updated_at", "2015-02-11 18:10:56.150486"], ["id", 123]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mList Load (0.1ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 293]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 70ms (Views: 66.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:56 -0800
+
+
+Started DELETE "/tasks/123" for ::1 at 2015-02-11 10:10:57 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"task"=>{"list_id"=>"293", "description"=>"", "due_date"=>""}, "id"=>"123"}
+attempting to delete a task with id: 123. params is: {"_method"=>"delete", "task"=>{"list_id"=>"293", "description"=>"", "due_date"=>""}, "controller"=>"tasks", "action"=>"destroy", "id"=>"123"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 123]]
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 293]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 123]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = $1  [["id", 123]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  ORDER BY id LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  ORDER BY id LIMIT 1[0m
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1  [["list_id", 293]]
+  Rendered tasks/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 55.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:10:57 -0800
+
+
+Started GET "/lists" for ::1 at 2015-02-11 10:11:01 -0800
+Processing by ListsController#index as HTML
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "lists".* FROM "lists"  ORDER BY "lists"."id" ASC LIMIT 1
+  [1m[36mList Load (0.5ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:11:01 -0800
+
+
+Started GET "/lists/292/edit" for ::1 at 2015-02-11 10:12:54 -0800
+Processing by ListsController#edit as HTML
+  Parameters: {"name"=>"", "id"=>"292"}
+  [1m[35mList Load (0.4ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1  [["id", 292]]
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1[0m  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:12:54 -0800
+
+
+Started DELETE "/tasks/109" for ::1 at 2015-02-11 10:12:58 -0800
+Processing by TasksController#destroy as HTML
+  Parameters: {"task"=>{"list_id"=>"292", "description"=>"", "due_date"=>""}, "id"=>"109"}
+attempting to delete a task with id: 109. params is: {"_method"=>"delete", "task"=>{"list_id"=>"292", "description"=>"", "due_date"=>""}, "controller"=>"tasks", "action"=>"destroy", "id"=>"109"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 109]]
+  [1m[36mList Load (0.1ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = $1 LIMIT 1[0m  [["id", 292]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT 1  [["id", 109]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = $1  [["id", 109]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mTask Load (0.6ms)[0m  SELECT  "tasks".* FROM "tasks"  ORDER BY id LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  ORDER BY id LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."list_id" = $1  [["list_id", 292]]
+  Rendered tasks/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 52.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/bootstrap-overrides-cb25738189bca93965a7834feb69b180.css?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/bootstrap-22760660526c99ad8e74caeadb9464fd.css?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/application-78e86e234cb2bbb63dc25ad9ff1cf763.css?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/todo-3ff22720c496e92f005a94f43444cb23.css?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/bootstrap.css.map-247aced95d08259e3d8c8472aeb18474.css?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/jquery-2.1.3-f6430688c576903899df06242228577b.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/test-91da829fc1ff9b4f2e496aa801078552.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/application-01a1728ba81b8b92513b92744252b88b.js?body=1" for ::1 at 2015-02-11 10:12:59 -0800
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff" for ::1 at 2015-02-11 10:12:59 -0800
